@@ -1,0 +1,78 @@
+ /* change to page-logo-working */
+.page-logo>i {
+  color: #fff;
+}
+
+.page-logo:hover {
+  background-color: #192734;
+}
+
+/* change to left-nav-working */
+.left-nav {
+  border-right: 1px solid #38444D;
+}
+
+.left-nav>a {
+  color: #fff;
+}
+
+.left-nav>a:hover,
+.tweet-options>a:hover {
+  color: #1DA1F2;
+  background-color: #192734;
+}
+
+/* change to tweet-input-working */
+.tweet-input>input {
+  background-color: #15202B;
+  color: #fff;
+}
+
+/* change to tweet-options */
+.tweet-options {
+  border-top: 1px solid  #253341;
+}
+
+/* change to tweet-item -not working yet*/
+/* .tweet-item {
+  border-top: 1px solid #253341;
+  border-bottom: 1px solid #253341;
+}
+
+.tweet-item:hover {
+  background-color: #192734;
+} 
+ 
+.details>a {
+  color: #657786;
+}*/
+
+
+.main-page {
+  border-right: 1px solid #253341;
+}
+
+.main-page>h3 {
+  border-bottom: 1px solid #253341;
+}
+
+.user-option {
+  border-bottom: 10px solid #253341;
+}
+
+.trends {
+  background-color: #1E2C39;
+}
+
+.trends>h4 {
+  border-bottom: 2px solid  #253341;
+}
+
+.nav-input {
+  background-color: #253341;
+}
+
+.nav-input::placeholder,
+.fa-search {
+  color: #7C8C99;
+} 

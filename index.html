@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./dimtheme.css">
     <title>Twitter App</title>
   </head>
   <body>
     <section id="root">
-      <section id="myModal"></section>
+      <section id="modal-overlay"></section>
+      <section id="dropdown-overlay"></section>
+      <div class="dropdown-content">
+        <a href="#"><i class='fab fa-rocketchat'></i>Topics</a>
+        <a href="#"><i class="fa fa-bolt"></i>Moments</a>
+        <a href="#"><i class="fa fa-external-link-square"></i>Twitter Ads</a>
+        <a href="#"><i class="fa fa-bar-chart"></i>Analytics</a>
+        <a href="#"><i class="material-icons">&#xe8b8;</i>Settings and privacy</a>
+        <a href="#"><i class="fa fa-question-circle-o"></i>Help Center</a>
+        <a href="#" id="modal-button"><i class="material-icons">&#xe3ae;</i>Display</a>
+      </div>
       <nav class="left-side-nav">
-        <a href="#" id="logo">
+        <a href="#" class="logo">
           <i class='fab fa-twitter'></i>
         </a>
         <a href="#"><i class="glyphicon glyphicon-home"></i>Home</a>
@@ -25,15 +36,6 @@
         <a href="#"><i class="fa fa-list-alt"></i>Lists</a>
         <a href="#"><i class='fas fa-user-alt'></i>Profile</a>
         <a href="#" id="dropdown-button"><i class="fa fa-caret-down"></i>More</a>
-        <div class="dropdown-content">
-          <a href="#"><i class='fab fa-rocketchat'></i>Topics</a>
-          <a href="#"><i class="fa fa-bolt"></i>Moments</a>
-          <a href="#"><i class="fa fa-external-link-square"></i>Twitter Ads</a>
-          <a href="#"><i class="fa fa-bar-chart"></i>Analytics</a>
-          <a href="#"><i class="material-icons">&#xe8b8;</i>Settings and privacy</a>
-          <a href="#"><i class="fa fa-question-circle-o"></i>Help Center</a>
-          <a href="#" id="modal-button"><i class="material-icons">&#xe3ae;</i>Display</a>
-        </div>
         <button>Tweet</button>
         <a href="#">
           <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="nav-image" alt="my profile picture">
@@ -69,7 +71,7 @@
               <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
                 You can go as far as your mind lets you. What you believe, remember, you can achieve.
               </p>
-              <div id="tweet-info">
+              <div class="tweet-info">
                 <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
                 <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
                 <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
@@ -86,7 +88,7 @@
               <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
                 You can go as far as your mind lets you. What you believe, remember, you can achieve.
               </p>
-              <div id="tweet-info">
+              <div class="tweet-info">
                 <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
                 <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
                 <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
@@ -103,7 +105,7 @@
               <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
                 You can go as far as your mind lets you. What you believe, remember, you can achieve.
               </p>
-              <div id="tweet-info">
+              <div class="tweet-info">
                 <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
                 <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
                 <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
@@ -120,7 +122,7 @@
               <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
                 You can go as far as your mind lets you. What you believe, remember, you can achieve.
               </p>
-              <div id="tweet-info">
+              <div class="tweet-info">
                 <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
                 <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
                 <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
@@ -137,7 +139,24 @@
               <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
                 You can go as far as your mind lets you. What you believe, remember, you can achieve.
               </p>
-              <div id="tweet-info">
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>  
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
                 <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
                 <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
                 <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
@@ -148,8 +167,8 @@
         </section> 
         <section class="right-side-nav">
           <i class="fa fa-search"></i>
-          <input type="text" id="input"placeholder="Search Twitter">
-          <div id="trending">
+          <input type="text" class="input" placeholder="Search Twitter">
+          <div class="trending">
             <h4>Trends for you</h4>
             <div class="current-trend">
               <p>Trending in Nigeria</p>

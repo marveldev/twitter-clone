@@ -39,7 +39,6 @@ dimButton.addEventListener('click', () => {
   document.querySelector('.input').classList.add('dim-input');
   document.querySelector('.main-content').classList.add('dim-page');
   document.querySelector('.user-options').classList.add('dim-user-option');
-
   document.querySelector('.trending').classList.remove('dark-trends');
   document.querySelector('.trending').classList.add('trends');
   document.querySelector('.user-input').classList.remove('dark');

@@ -48,7 +48,7 @@ body {
 }
 
 .left-side-nav>a:hover,
-#info:hover,
+.user-input>a:last-child:hover,
 .options>a:hover,
 .dropdown-content a:hover {
   background-color: #F5FBFE;
@@ -152,7 +152,7 @@ body {
   color: #969BA7;
 }
 
-#info {
+.user-input>a:last-child {
   margin-left: 3.5em;
   padding: 0.7em 1.2em;
   text-decoration: none;
@@ -275,7 +275,7 @@ body {
   background-color: #00000066; 
 }
 
-.modal-content {
+.modal-container {
   display: none;
   z-index: 1;
   width: 40em;
@@ -290,19 +290,24 @@ body {
   font-weight: bold;
 }
 
-.modal-content>button {
+.modal-container>button {
   height: 4em;
   width: 10em;
   border: unset;
   margin-left: 1.5em;
+  border-radius: 0.5em;
+  color: #fff;
+  box-shadow: 5px 5px 10px 5px #00000033;
 }
 
 #dim-button {
   background-color: #15202B;
-  color: #fff;
 }
 
 #light-out-button {
-  color: #fff;
   background-color: #000;
+}
+
+#default-button {
+  color: #000;
 }

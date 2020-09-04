@@ -15,7 +15,7 @@
     <section id="root">
       <section id="modal-overlay"></section>
       <section id="dropdown-overlay"></section>
-      <div class="dropdown-content">
+      <div id="dropdown" class="dropdown-content">
         <a href="#"><i class='fab fa-rocketchat'></i>Topics</a>
         <a href="#"><i class="fa fa-bolt"></i>Moments</a>
         <a href="#"><i class="fa fa-external-link-square"></i>Twitter Ads</a>
@@ -36,7 +36,7 @@
         <a href="#"><i class="fa fa-list-alt"></i>Lists</a>
         <a href="#"><i class='fas fa-user-alt'></i>Profile</a>
         <a href="#" id="dropdown-button"><i class="fa fa-caret-down"></i>More</a>
-        <button>Tweet</button>
+        <button id="tweet-modal" class="button">Tweet</button>
         <a href="#">
           <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="nav-image" alt="my profile picture">
           <span>Marvelwonders</span>
@@ -59,7 +59,7 @@
               <a href="#"><i class="fa fa-bar-chart"></i></a>
               <a href="#"><i class="fa fa-smile-o"></i></a>
               <a href="#"><i class="fa fa-calendar-plus-o"></i></a>
-              <button>Tweet</button>
+              <button class="button">Tweet</button>
             </div>  
           </div>
           <div class="item">
@@ -220,6 +220,24 @@
         <button id="default-button">DEFAULT</button>
         <button id="dim-button">DIM</button>
         <button id="light-out-button">Lights Outs</button>
+      </div>
+      <div id="tweet-modal-container">
+        <button id="close-modal-button">X</button>
+        <div id="input-modal" class="user-input"> 
+          <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+          <div>
+            <textarea placeholder="What's happening?"></textarea>
+            <a href="#" id="privacy-info"><strong>Everyone can reply</strong></a>
+          </div>
+        </div>
+        <div class="options">
+          <a href="#"><i class="fa fa-file-picture-o"></i></a>
+          <a href="#"><i class="material-icons">&#xe908;</i></a>
+          <a href="#"><i class="fa fa-bar-chart"></i></a>
+          <a href="#"><i class="fa fa-smile-o"></i></a>
+          <a href="#"><i class="fa fa-calendar-plus-o"></i></a>
+          <button class="button">Tweet</button>
+        </div>  
       </div>
     </section>
     <script src="./index.js"></script>

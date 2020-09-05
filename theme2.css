@@ -1,0 +1,65 @@
+.dim-theme {
+  background-color: #15202B;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dim-theme .logo>i {
+  color: #fff;
+}
+
+.dim-theme .logo:hover {
+  background-color: #192734;
+}
+
+.dim-theme .left-side-nav {
+  border-right: 1px solid #38444D;
+}
+
+.dim-theme .left-side-nav>a:hover {
+  color: #1DA1F2;
+  background-color: #192734;
+}
+
+.dim-theme .left-side-nav>a {
+  color: #fff;
+}
+
+.dim-theme .modal-container {
+  background-color: #15202B;
+}
+
+.dim-theme .tweet-options>a:hover {
+  color: #1DA1F2;
+  background-color: #192734;
+}
+
+.dim-theme .input {
+  background-color: #253341;
+}
+
+.dim-theme .input::placeholder {
+  background-color: #253341;
+}
+
+.dim-theme .main-content>.item:hover {
+  background-color: #192734;
+}
+
+.dim-theme .main-content>.item {
+  border-top: 1px solid #253341;
+  border-bottom: 1px solid #253341;
+}
+
+.dim-theme .main-content>div>div>div>a {
+  color: #657786;
+}
+
+.dim-theme .main-content {
+  border-right: 1px solid #253341;
+}
+
+.dim-theme .main-content>h3 {
+  border-bottom: 1px solid #253341;
+}

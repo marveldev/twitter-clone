@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./theme.css">
+    <link rel="stylesheet" href="./theme2.css">
+    <title>Twitter App</title>
+  </head>
+  <body>
+    <div id="root">
+      <section id="modal-overlay"></section>
+      <section id="dropdown-overlay"></section>
+      <div id="dropdown" class="dropdown-content">
+        <a href="#"><i class='fab fa-rocketchat'></i>Topics</a>
+        <a href="#"><i class="fa fa-bolt"></i>Moments</a>
+        <a href="#"><i class="fa fa-external-link-square"></i>Twitter Ads</a>
+        <a href="#"><i class="fa fa-bar-chart"></i>Analytics</a>
+        <a href="#"><i class="material-icons">&#xe8b8;</i>Settings and privacy</a>
+        <a href="#"><i class="fa fa-question-circle-o"></i>Help Center</a>
+        <a href="#" id="modal-button"><i class="material-icons">&#xe3ae;</i>Display</a>
+      </div>
+      <nav class="left-side-nav">
+        <a href="#" class="logo">
+          <i class='fab fa-twitter'></i>
+        </a>
+        <a href="#"><i class="glyphicon glyphicon-home"></i>Home</a>
+        <a href="#"><i class='fas fa-hashtag'></i>Explore</a>
+        <a href="#"><i class='fas fa-bell'></i>Notifications</a>
+        <a href="#"><i class="fa fa-envelope-o"></i>Messages</a>
+        <a href="#"><i class="fa fa-bookmark-o"></i>Bookmarks</a>
+        <a href="#"><i class="fa fa-list-alt"></i>Lists</a>
+        <a href="#"><i class='fas fa-user-alt'></i>Profile</a>
+        <a href="#" id="dropdown-button"><i class="fa fa-caret-down"></i>More</a>
+        <button id="tweet-modal" class="button">Tweet</button>
+        <a href="#">
+          <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="nav-image" alt="my profile picture">
+          <span>Marvelwonders</span>
+        </a>
+      </nav>
+      <section class="grid-container">
+        <section class="main-content">
+          <h3>Home</h3>
+          <div class="user-options">
+            <div class="user-input"> 
+              <a href="#">
+                <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+              </a>
+              <input type="text" placeholder="What's happening?">
+              <a href="#"><strong>Everyone can reply</strong></a>
+            </div>
+            <div class="tweet-options">
+              <a href="#"><i class="fa fa-file-picture-o"></i></a>
+              <a href="#"><i class="material-icons">&#xe908;</i></a>
+              <a href="#"><i class="fa fa-bar-chart"></i></a>
+              <a href="#"><i class="fa fa-smile-o"></i></a>
+              <a href="#"><i class="fa fa-calendar-plus-o"></i></a>
+              <button class="button">Tweet</button>
+            </div>  
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>  
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>  
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>  
+          <div class="item">
+            <a href="#">
+              <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+            </a>
+            <div class="user-profile"> 
+              <strong>Jane Doe</strong>
+              <p>Don’t limit yourself. Many people limit themselves to what they think they can do.
+                You can go as far as your mind lets you. What you believe, remember, you can achieve.
+              </p>
+              <div class="tweet-info">
+                <a href="#"><i class="fa fa-comment-o"></i>5.1k</a>
+                <a href="#"><i class='fas fa-retweet'></i>2.1k</a>
+                <a href="#"><i class="fa fa-heart-o"></i>3.1k</a>
+                <a href="#"><i class="fa fa-upload"></i></a>
+              </div>
+            </div>
+          </div>  
+        </section> 
+        <section class="right-side-nav">
+          <i class="fa fa-search"></i>
+          <input type="text" class="input" placeholder="Search Twitter">
+          <div class="trending">
+            <h4>Trends for you</h4>
+            <div class="current-trend">
+              <p>Trending in Nigeria</p>
+              <strong>Erica</strong>
+              <p>Trending with: Laycon, #BBNaijaLockdown</p>
+              <p>128k Tweets</p>
+            </div>
+            <div class="current-trend">
+              <p>Trending in Nigeria</p>
+              <strong>Erica</strong>
+              <p>Trending with: Laycon, #BBNaijaLockdown</p>
+              <p>128k Tweets</p>
+            </div>
+            <div class="current-trend">
+              <p>Trending in Nigeria</p>
+              <strong>Erica</strong>
+              <p>Trending with: Laycon, #BBNaijaLockdown</p>
+              <p>128k Tweets</p>
+            </div>
+            <div class="current-trend">
+              <p>Trending in Nigeria</p>
+              <strong>Erica</strong>
+              <p>Trending with: Laycon, #BBNaijaLockdown</p>
+              <p>128k Tweets</p>
+            </div>
+            <div class="current-trend">
+              <p>Trending in Nigeria</p>
+              <strong>Erica</strong>
+              <p>Trending with: Laycon, #BBNaijaLockdown</p>
+              <p>128k Tweets</p>
+            </div>
+            <div class="current-trend">
+              <p>Trending in Nigeria</p>
+              <strong>Erica</strong>
+              <p>Trending with: Laycon, #BBNaijaLockdown</p>
+              <p>128k Tweets</p>
+            </div>
+            <div class="current-trend">
+              <p>Trending in Nigeria</p>
+              <strong>Erica</strong>
+              <p>Trending with: Laycon, #BBNaijaLockdown</p>
+              <p>128k Tweets</p>
+            </div>
+          </div>
+        </section> 
+      </section>
+      <div class="modal-container">
+        <p>Background</p>
+        <button id="default-button">DEFAULT</button>
+        <button id="dim-button">DIM</button>
+        <button id="light-out-button">Lights Outs</button>
+      </div>
+      <div id="tweet-modal-container">
+        <button id="close-modal-button">X</button>
+        <div id="input-modal" class="user-input"> 
+          <img src="https://images.pexels.com/photos/3921857/pexels-photo-3921857.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="profile-photo" alt="my profile picture">
+          <div>
+            <textarea placeholder="What's happening?"></textarea>
+            <a href="#" id="privacy-info"><strong>Everyone can reply</strong></a>
+          </div>
+        </div>
+        <div class="options">
+          <a href="#"><i class="fa fa-file-picture-o"></i></a>
+          <a href="#"><i class="material-icons">&#xe908;</i></a>
+          <a href="#"><i class="fa fa-bar-chart"></i></a>
+          <a href="#"><i class="fa fa-smile-o"></i></a>
+          <a href="#"><i class="fa fa-calendar-plus-o"></i></a>
+          <button class="button">Tweet</button>
+        </div>  
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

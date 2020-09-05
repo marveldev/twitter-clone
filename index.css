@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.default-theme {
+  background: red;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  position: absolute;
+  top: 0;
+  left: 21em;
+}
+
+.logo {
+  width: 0.5em !important;
+  height: 3em !important;
+}
+
+.logo>i {
+  color: #0000ff;
+  font-size: 1.5em;
+  margin: 0.2em 0 0 0.2em;
+}
+
+.left-side-nav {
+  position: fixed;
+  left: 3em;
+  height: 100%;
+  width: 18em;
+  border-right: 1px solid #E6ECF0;
+}
+
+.left-side-nav>a {
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2.5em 0.5em 0.5em;
+  width: fit-content;
+  border-radius: 2em;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.left-side-nav>a i {
+  margin-right: 1em;
+}
+
+.left-side-nav>a:hover,
+.user-input>a:last-child:hover,
+.tweet-options>a:hover,
+.dropdown-content a:hover,
+#privacy-info:hover,
+#close-modal-button:hover {
+  background-color: #F5FBFE;
+}
+
+.button:hover {
+  background-color: #2d91cf;
+}
+
+#dropdown-overlay {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  width: 100%; 
+  height: 100%; 
+  background-color: #ffffff00;  
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  bottom: 13em;
+  left: 3em;
+  background-color: #ffff;
+  width: 14em;
+  border-radius: 0.5em;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  border-radius: 0.5em;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content>a i {
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+.dropdown-content>a:nth-child(2) i {
+  margin-right: 1.5em;
+}
+
+.dropdown-content>a:nth-child(4) {
+  border-bottom: 1px solid #E6ECF0;
+  border-radius: 0;
+}
+
+.nav-image {
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.left-side-nav>button {
+  width: 17em;
+  height: 3.5em;
+  border: unset;
+  border-radius: 2em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1DA1F2;
+  margin-bottom: 2em;
+}
+
+.main-content {
+  border-right: 1px solid  #E6ECF0;
+  width: 42em;
+}
+
+.main-content>h3 {
+  font-weight: bold;
+  height: 1.8em;
+  padding-left: 0.5em;
+  border-bottom: 1px solid  #E6ECF0;
+}
+
+.user-options {
+  height: 11em;
+  padding-left: 0.8em;
+  border-bottom: 10px solid  #E6ECF0;
+}
+
+.profile-photo {
+  height: 3.5em;
+  width: 3.5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-input>input {
+  width: 85%;
+  height: 2em;
+  margin-left: 0.5em;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+}
+
+.user-input>input::placeholder {
+  font-size: 1em;
+  color: #969BA7;
+}
+
+.user-input>a:last-child {
+  margin-left: 3.5em;
+  padding: 0.7em 1.2em;
+  text-decoration: none;
+  border-radius: 2em;
+  color: #1DA1F2;
+}
+
+.tweet-options {
+  margin: 1em 0 0 4.8em;
+  padding-top: 1em;
+  border-top: 1px solid  #E6ECF0;
+}
+
+.tweet-options>a {
+  font-size: 1.5em;
+  padding: 0.5em;
+  border-radius: 1.5em;
+  color: #1DA1F2;
+}
+
+.tweet-options>button {
+  margin-left: 12em;
+  width: 5em;
+  height: 2.5em;
+  border: unset;
+  border-radius: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #8ED0F9;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  padding: 1em 0 1em 0.8em;
+  height: auto;
+  border-top: 1px solid  #E6ECF0;
+  border-bottom: 1px solid  #E6ECF0;
+}
+
+.item:hover {
+  background-color: #F5F8FA;
+}
+
+.tweet-info>a {
+  color: black;
+  margin-right: 3em;
+  text-decoration: none;
+}
+
+.tweet-info>a i {
+  margin-right: 0.5em;
+  font-size: 20px;
+  color: #657786;
+}
+
+.right-side-nav {
+  margin: 0 0 0 2em;
+}
+
+.trending {
+  margin: 2.5em 0 0 1.8em;
+  background-color: #EFF2F4;
+  padding-top: 1em;
+  border-radius: 1.5em;
+  width: 90%;
+}
+
+.trending>h4 {
+  font-weight: bold;
+  padding: 0 0 0.5em 1em;
+  border-bottom: 2px solid  #E6ECF0;
+  margin-bottom: 0;
+}
+
+.input {
+  width: 90%;
+  height: 2.2em;
+  padding-left: 2em;
+  margin-top: 0.8em;
+  border: unset;
+  border-radius: 2em;
+  background-color: #E6ECF0;
+  font-size: 1.5em;
+}
+
+.fa-search {
+  position: relative;
+  left: 2em;
+  font-size: 1.3em;
+}
+
+.current-trend {
+  height: 7em;
+  width: 100%;
+  margin: 1em 0;
+  padding-left: 1em;
+  border-bottom: 2px solid  #E6ECF0;
+}
+
+.current-trend>p {
+  margin: 0;
+}
+
+.current-trend>p:last-child {
+  margin: 0.5em 0;
+  color: #7C8C99;
+}
+
+.current-trend:last-child {
+  border-bottom: none;
+}
+
+#modal-overlay {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  width: 100%; 
+  height: 100%; 
+  background-color: #00000066; 
+}
+
+.modal-container {
+  display: none;
+  z-index: 1;
+  width: 40em;
+  position: fixed; 
+  top: 15em;
+  left: 25em;
+  height: fit-content;
+  border-radius: 0.8em;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 5px 5px 10px 5px #00000033;
+  font-weight: bold;
+}
+
+.modal-container>button {
+  height: 4em;
+  width: 10em;
+  border: unset;
+  margin-left: 1.5em;
+  border-radius: 0.5em;
+  color: #fff;
+  box-shadow: 5px 5px 10px 5px #00000033;
+}
+
+#dim-button {
+  background-color: #15202B;
+}
+
+#light-out-button {
+  background-color: #000;
+}
+
+#default-button {
+  color: #000;
+}
+
+#tweet-modal-container {
+  display: none;
+  z-index: 1;
+  width: 40em;
+  position: fixed; 
+  top: 3em;
+  left: 25em;
+  height: 25em;
+  border-radius: 0.8em;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 5px #00000033;
+}
+
+#close-modal-button {
+  border: unset;
+  font-size: 1.5em;
+  color: #1da1f2;
+  margin: 0.5em 0 0.5em 0.5em;
+  padding: 0.2em 0.6em;
+  border-radius: 1em;
+  background-color: #fff;
+}
+
+#input-modal {
+  display: grid;
+  grid-template-columns: 0.3fr 2fr;
+  border-top: 1px solid #ccd6dd;
+  padding: 1em 0 0 1em;
+}
+
+#input-modal>div>textarea {
+  width: 33em;
+  margin-bottom: 7em;
+  border: none;
+  padding: 1em 0;
+  outline: none;
+  resize: none;
+}
+
+#input-modal>div>textarea::placeholder {
+  color: #9197A3;
+  font-size: 1.3em;
+}
+
+#privacy-info {
+  padding: 0.7em 1.2em;
+  text-decoration: none;
+  border-radius: 2em;
+  color: #1DA1F2;
+}

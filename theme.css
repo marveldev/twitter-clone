@@ -1,0 +1,138 @@
+.dim-logo>i,
+.dim-nav>a {
+  color: #fff;
+}
+
+.dim-logo:hover,
+.dim-page>.item:hover,
+.dim-dropdown>a:hover {
+  background-color: #192734;
+}
+
+.dark-page>.item:hover,
+.dark-user-input>a:last-child:hover,
+.dark-dropdown>a:hover {
+  background-color: #15181C;
+}
+
+.dim-nav {
+  border-right: 1px solid #38444D;
+}
+
+.dim-nav>a:hover,
+.tweet-options>a:hover,
+.dim-user-input>a:last-child:hover {
+  color: #1DA1F2;
+  background-color: #192734;
+}
+
+.dim-user-input>input {
+  background-color: #15202B;
+  color: #fff;
+}
+
+.dark-user-input>input {
+  background-color: #000;
+}
+
+.tweet-options {
+  border-top: 1px solid  #253341;
+}
+
+.dim-page>.item,
+.dark-page>.item {
+  border-top: 1px solid #253341;
+  border-bottom: 1px solid #253341;
+}
+
+.dim-page>div>div>div>a,
+.dark-page>div>div>div>a {
+  color: #657786;
+}
+
+.dim-page,
+.dark-page {
+  border-right: 1px solid #253341;
+}
+
+.dim-page>h3,
+.dark-page>h3 {
+  border-bottom: 1px solid #253341;
+}
+
+.dim-user-option {
+  border-bottom: 10px solid #253341;
+}
+
+.dark-user-option {
+  border-bottom: 10px solid #202327;
+}
+
+.trends {
+  background-color: #1E2C39;
+}
+
+.dark-trends,
+.dark-input  {
+  background-color: #15181C;
+}
+
+.trends>h4,
+.trends>.current-trend,
+.dark-trends>h4,
+.dark-trends>.current-trend {
+  border-bottom: 2px solid  #253341;
+}
+
+.dim-input {
+  background-color: #253341;
+}
+
+.dim-input::placeholder,
+.fa-search,
+.trends>.current-trend>p, 
+.dark-trends>.current-trend>p {
+  color: #7C8C99;
+} 
+
+.dim-modal,
+.dim-dropdown {
+  background-color: #15202B;
+}
+
+.current-trend:last-child {
+  border-bottom: none;
+}
+
+.dim-dropdown a,
+.dark-dropdown a {
+  color: #fff;
+}
+
+.dark-dropdown {
+  background-color: #000000;
+  box-shadow: 0px 8px 16px 0px #2c2c2c;
+}
+
+.dim-dropdown>a:nth-child(4),
+.dark-dropdown>a:nth-child(4) {
+  border-bottom: 1px solid #253341;
+}
+
+.dim-tweet-modal {
+  background-color: #15202B !important;
+}
+
+.dim-tweet-modal>div {
+  border-top: 1px solid #3d5466 !important;
+}
+
+.dim-tweet-modal>div>div>textarea {
+  background-color: #15202B;
+  color: #fff;
+}
+
+.dim-tweet-modal>div>a:hover,
+.dim-tweet-modal>div>div>a:hover {
+  background-color: #192734 !important;
+}
